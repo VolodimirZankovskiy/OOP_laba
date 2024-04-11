@@ -18,6 +18,7 @@ public:
     Doctor(string newname,string newsurname, int newexp);
     ~Doctor(){};
     void getDoctor();
+    friend bool operator<(const Doctor &lhr, const Doctor &rhr);
 };
 
 

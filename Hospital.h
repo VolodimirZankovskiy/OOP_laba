@@ -1,5 +1,3 @@
-
-
 #ifndef OOP_LABA_HOSPITAL_H
 #define OOP_LABA_HOSPITAL_H
 

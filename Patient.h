@@ -1,7 +1,3 @@
-//
-// Created by User on 11.04.2024.
-//
-
 #ifndef OOP_LABA_PATIENT_H
 #define OOP_LABA_PATIENT_H
 
@@ -13,6 +9,7 @@ class Patient{
     string name;
     string surname;
     int age;
+    static int counter;
 public:
     Patient();
     Patient(string newname);
@@ -21,7 +18,9 @@ public:
     ~Patient(){};
     Patient(const Patient &other);
     Patient(Patient &&other);
-
+    void getCounter();
+    friend ostream &operator<<(ostream &os, const Patient &obj);
+    friend istream &operator>>(istream&is, Patient &obj);
 };
 
 
