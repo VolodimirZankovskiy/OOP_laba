@@ -9,4 +9,10 @@ add_executable(OOP_laba main.cpp
         Hospital.cpp
         Hospital.h
         Patient.cpp
-        Patient.h)
+        Patient.h
+        Ophthalmology.cpp
+        Ophthalmology.h
+Diagnosis.cpp
+Diagnosis.h
+Traumatology.cpp
+Traumatology.h)

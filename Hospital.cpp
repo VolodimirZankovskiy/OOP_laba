@@ -14,3 +14,17 @@ Hospital::Hospital(std::string newlocation, int newfloors)
 Hospital::Hospital(std::string newlocation, int newfloors, int newrooms)
         :location(newlocation),floors(newfloors),rooms(newrooms){}
 
+Hospital::Hospital(const Hospital &other) {
+    this->location = other.location;
+    this->rooms = other.rooms;
+    this->floors = other.floors;
+}
+
+Hospital::Hospital(Hospital &&other) {
+    this->location = other.location;
+    this->rooms = other.rooms;
+    this->floors = other.floors;
+    other.floors=0;
+    other.rooms=0;
+    other.location="";
+}

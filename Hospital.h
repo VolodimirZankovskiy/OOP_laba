@@ -14,6 +14,8 @@ public:
     Hospital(string newlocation);
     Hospital(string newlocation,int newfloors);
     Hospital(string newlocation,int newfloors, int newrooms);
+    Hospital(Hospital &&other);
+    Hospital(const Hospital &other);
     ~Hospital(){};
 
 };
