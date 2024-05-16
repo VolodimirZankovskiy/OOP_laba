@@ -6,12 +6,13 @@
 using namespace std;
 
 
-class Traumatology :public Hospital{
+class Traumatology final :public Hospital {
 int cost;
 string perk;
 public:
     ~Traumatology(){};
     Traumatology(string loc, int floor, int room, int costs, string perks);
+
 };
 
 

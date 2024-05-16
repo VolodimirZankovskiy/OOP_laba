@@ -28,3 +28,5 @@ Hospital::Hospital(Hospital &&other) {
     other.rooms=0;
     other.location="";
 }
+
+void  Hospital::getlocation() {cout<<location;}

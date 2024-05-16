@@ -16,7 +16,10 @@ public:
     Hospital(string newlocation,int newfloors, int newrooms);
     Hospital(Hospital &&other);
     Hospital(const Hospital &other);
-    ~Hospital(){};
+    void Example(){cout<<"base method";}
+    virtual void getlocation() ;//= 0;
+    virtual void getfloor(){cout<<floors;}
+    virtual ~Hospital(){};
 
 };
 

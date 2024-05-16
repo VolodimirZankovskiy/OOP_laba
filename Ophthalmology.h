@@ -11,10 +11,14 @@ class Ophthalmology :public Hospital{
     string SurnameofmainDoctor;
 
 public:
-    ~Ophthalmology(){};
+    ~Ophthalmology()override{};
     Ophthalmology(string loc, int floor, int room, string name, string surname);
     Ophthalmology(const Ophthalmology &other);
     Ophthalmology(Ophthalmology &&other);
+    void Example(){cout<<"derived method";}
+    void getlocation()override{cout<<"something";}
+    void getfloor()override{cout<<"something";}
+    void Function(Hospital &a){cout<<"Base class reference";}
 };
 
 
